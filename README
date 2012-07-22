@@ -1,0 +1,6 @@
+Clipboard QR code applet
+Creates QR code from clipboard content using pure javascript
+
+Version 1.0
+
+This is some proof-of-concept. I simply wanted to test St.DrawingArea.
