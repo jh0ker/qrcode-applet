@@ -37,7 +37,8 @@ QR.prototype = {
         let context = this.actor.get_context();
         
         //clear drawing area
-        Clutter.cairo_set_source_color(context, QR_Background);
+        //Clutter.cairo_set_source_color(context, QR_Background);
+        context.setSourceRGBA(1.0, 1.0, 1.0, 0.9);
         context.rectangle(0, 0, width, height);
         context.fill();
         
@@ -45,7 +46,8 @@ QR.prototype = {
             return;
         
         //draw qr code
-        Clutter.cairo_set_source_color(context, QR_Foreground);
+        //Clutter.cairo_set_source_color(context, QR_Foreground);
+        context.setSourceRGBA(0.0, 0.0, 0.0, 0.9);
         let length = this._qrdata.length;
 
         for (let i = 0; i < length; ++i) {
